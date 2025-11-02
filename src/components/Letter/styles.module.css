@@ -1,0 +1,29 @@
+.container {
+    background-color: #EBEBFC;
+    color: #4F4FB9;
+
+    width: 3.375rem;
+    height: 3.375rem;
+    border-radius: .75rem;
+    margin-top: 3.25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.letterCorrect {
+    color: #03AB4F;
+    background-color: #E1F5EC;
+    border: 1px solid #03AB4F;
+}
+
+.letterWrong {
+    background-color: #FFCF62;
+    color: #000000;
+    border: 1px solid #691B0A;
+}
