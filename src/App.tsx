@@ -3,6 +3,7 @@ import styles from './app.module.css'
 import { Header } from './components/Header'
 import { Letter } from './components/Letter'
 import { Tip } from './components/Tip'
+import { Input } from './components/Input'
 
 export function App() {
 
@@ -10,7 +11,15 @@ export function App() {
     <main>
       <Header />
       <Tip />
-      <Letter />
+      <div className={styles.word}> 
+        <Letter />
+      </div>
+
+      <h3>Palpite</h3>
+      <div className={styles.guess}>
+        <Input />
+
+      </div>
     </main>
   </div>
 }
