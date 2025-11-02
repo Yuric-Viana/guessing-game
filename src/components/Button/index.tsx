@@ -1,7 +1,11 @@
 import styles from './styles.module.css'
 
-export function Button() {
-    return <button className={styles.container}>
-        Confirmar
-    </button>
+type Props = React.ComponentProps<"button"> & {
+    title: string
+}
+
+export function Button({ title, ...rest }: Props) {
+    return (<button type='button' {...rest} className={styles.container}>
+        {title}
+    </button>)
 }

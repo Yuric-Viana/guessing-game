@@ -2,7 +2,7 @@
     background-color: #EBEBFC;
     padding: 1rem;
     border-radius: .75rem;
-    margin-top: 3.25rem;
+    margin-block: 3.25rem;
 
     display: flex;
     gap: 1rem;
@@ -12,8 +12,9 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-right: auto;
 
-    & strong {
+    & h2 {
         color: #4F4FB9;
         font-size: 1.25rem;
         font-weight: bold;

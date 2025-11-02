@@ -6,9 +6,10 @@ import styles from './styles.module.css'
 type Props = {
     attempts?: number
     max?: number
+    onRestart: () => void
 }
 
-export function Header({ attempts, max }: Props) {
+export function Header({ attempts, max, onRestart }: Props) {
     return <div className={styles.container}>
         <img src={logo} alt="Logo" />
 
@@ -17,7 +18,7 @@ export function Header({ attempts, max }: Props) {
                 <strong>{attempts} </strong> de {max} tentativas
             </span>
 
-            <button type='button'>
+            <button type='button' onClick={onRestart}>
                 <img src={restart} alt="Botão de reiniciar" />
             </button>
         </header>

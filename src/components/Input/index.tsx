@@ -1,9 +1,7 @@
 import styles from './styles.module.css'
 
-type Props = {
-    letter?: string
-}
+type Props = React.ComponentProps<"input">
 
-export function Input({ letter, ...rest }: Props) {
-    return <input type="text" placeholder='?' maxLength={1} autoFocus {...rest} className={styles.container} />
+export function Input({ ...rest }: Props) {
+    return <input type="text" {...rest} className={styles.container} />
 }

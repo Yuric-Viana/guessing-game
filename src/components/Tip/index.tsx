@@ -11,8 +11,8 @@ export function Tip({ tip }: Props) {
         <img src={tipIcon} alt="Ícone de dica" />
 
         <div>
-            <strong>Dica</strong>
-            <span>Biblioteca para criar interfaces Web com Javascript.</span>
+            <h2>Dica</h2>
+            <span>{tip}</span>
         </div>
     </div>
 }

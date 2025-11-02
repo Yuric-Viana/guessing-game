@@ -5,7 +5,6 @@
     width: 3.375rem;
     height: 3.375rem;
     border-radius: .75rem;
-    margin-top: 3.25rem;
 
     display: flex;
     justify-content: center;
@@ -26,4 +25,9 @@
     background-color: #FFCF62;
     color: #000000;
     border: 1px solid #691B0A;
+}
+
+.letterSmall {
+    width: 2.75rem;
+    height: 2.75rem;
 }

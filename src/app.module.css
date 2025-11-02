@@ -1,19 +1,34 @@
 .container {
-    background-color: #F5F5FA;
-
     width: 100%;
     height: 100vh;
 
     display: flex;
     justify-content: center;
-    padding-block: 7rem;
+    align-items: center;
 }
 
 .container main {
     background-color: #FFFFFF;
 
     width: 34.75rem;
-    padding-inline: 2rem;
-    padding-block: 4.5rem 4rem;
+    padding: 4rem 2rem;
     border-radius: .75rem;
+}
+
+.container main > div {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.word {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.guess {
+    width: 100%;
+
+    display: flex;
+    justify-content: left;
 }
