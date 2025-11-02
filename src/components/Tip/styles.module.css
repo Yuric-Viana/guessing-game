@@ -1,0 +1,26 @@
+.container {
+    background-color: #EBEBFC;
+    padding: 1rem;
+    border-radius: .75rem;
+    margin-top: 3.25rem;
+
+    display: flex;
+    gap: 1rem;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    & strong {
+        color: #4F4FB9;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    & span {
+        color: #4F4FB9;
+    }
+}
+
