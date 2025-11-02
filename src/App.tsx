@@ -5,8 +5,13 @@ import { Letter } from './components/Letter'
 import { Tip } from './components/Tip'
 import { Input } from './components/Input'
 import { Button } from './components/Button'
+import { LettersUsed, type LettersUsedProps } from './components/LettersUsed'
+import { useState } from 'react'
 
 export function App() {
+  const [letterUsed, setLetterUsed] = useState<LettersUsedProps[]>([{
+    value: 'X', correct: true
+  }])
 
   return <div className={styles.container}>
     <main>
@@ -21,6 +26,8 @@ export function App() {
         <Input />
         <Button />
       </div>
+
+      <LettersUsed data={letterUsed}/>
     </main>
   </div>
 }
