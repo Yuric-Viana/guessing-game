@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.container header {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 3.25rem;
+}
+
+.container > img {
+  height: 3.75rem;
+}
+
+.container header span {
+  color: #9b9b9b;
+}
+
+.container header span strong {
+  color: #e8891c;
+  font-weight: bold;
+}
+
+.container header button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container header button img {
+    transition: scale ease;
+}
+
+.container header button img:hover {
+    scale: 1.3;
+}
