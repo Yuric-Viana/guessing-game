@@ -16,6 +16,7 @@ export function App() {
   const [challenge, setChallenge] = useState<Challenge | null>(null)
   const [letter, setLetter] = useState('')
   const [lettersUsed, setLettersUsed] = useState<LettersUsedProps[]>([])
+  const [shake, setShake] = useState(false)
 
   const LIMIT_ATTEMPTS = 5
 
@@ -48,6 +49,11 @@ export function App() {
     setLettersUsed((prevState) => [...prevState, { value, correct }])
     setAttempts(currentScore)
     setLetter('')
+
+    if (!correct) {
+      setShake(true)
+      setTimeout(() => setShake(false), 300)
+    }
   }
 
   useEffect(() => {
@@ -84,7 +90,7 @@ export function App() {
 
       <Tip tip={challenge?.tip} />
 
-      <div className={styles.word}>
+      <div className={`${styles.word} ${shake && styles.shake}`}>
         {
           challenge.word.split('').map((letter, index) => {
             const letterUsed = lettersUsed.find((used) => used.value.toUpperCase() === letter.toUpperCase())
